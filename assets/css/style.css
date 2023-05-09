@@ -12,7 +12,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Sora', sans-serif;
-    height: 5000px;
     overflow-x: hidden!important;
 }
 
@@ -388,6 +387,151 @@ header {
 
 .feature-btn:hover {
     opacity: 0.9;
+}
+
+/* Member */
+.member {
+    padding-bottom: 170px;
+}
+
+.member-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.member__heading-title {
+    text-align: center;
+}
+
+.member-btn {
+    margin:38px 0px 70px 0;
+}
+
+.member-list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
+}
+
+.member-item:hover .member-item-bg{
+    transform: scale(1.05);
+}
+
+.member-item-bg {
+    border-radius: 6px;
+    padding: 28px 4px 0;
+    background: #EAF6FF;
+    transition: 0.25 ease;
+}
+
+.member-item-bg img {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.member__info {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.member__info-name {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #10375C;
+    font-weight: 500;
+}
+
+.member__info-desc {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #575F66;
+}
+
+.control-member-btn {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+}
+
+.control-member-link {
+    color: #575F66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575F66;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.control-member-link:hover {
+    background: #2E80CE;
+    border: 1px solid #2E80CE;
+    color: white;
+}
+/* Install */
+.install {
+    padding:95px 0 170px 0;
+}
+
+.install-inner {
+    background: #2E80CE;
+    border-radius: 4px;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    gap: 160px;
+}
+
+.install-inner-img img{
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+
+.install-content--title {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 489px;
+}
+
+.install-content--desc {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #FFFFFF;
+}
+
+.install-app {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
+
+.install_app-link {
+    display: inline-block;
+}
+
+.install_app-link img {
+    display: block;
 }
 
 

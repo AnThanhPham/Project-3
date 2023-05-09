@@ -46,7 +46,20 @@
     }
 
     .feature {
-        padding: 20px;
+        padding: 20px 20px 170px;
+    }
+
+    .install {
+        padding-top: 0px;
+    }
+
+    .install-inner {
+        gap: 30px;
+        justify-content: space-evenly;
+    }
+
+    .install-inner-img img {
+        margin-top: 0px;
     }
 }
 
@@ -116,6 +129,16 @@
     .service__content--paragraph {
         align-items: center;
     }
+
+}
+
+@media (max-width:600px) {
+
+
+    .install-inner {
+        flex-direction: column;
+        padding: 10px 70px;
+    }
 }
 
 @media (max-width:500px) {
@@ -147,5 +170,11 @@
         grid-column-start: unset;
         grid-column-end: unset;
     }
+    
+    .member-list {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+
     
 }
